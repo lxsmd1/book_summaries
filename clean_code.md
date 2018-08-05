@@ -186,4 +186,21 @@ Levels of abstraction:
   document.append_footer();
 ```
 - Command Query Separation
-  - 
+  - Functions should do only 1 of these
+    - do something, change the state of an object
+    - answer something, return the held value of the object
+```ruby
+  # BAD
+  if (set_attribute('username', 'unclebob'))
+    do something...
+  end
+
+  # GOOD
+  if attribute_exists('username')
+    set_attribute('username', 'unclebob')
+  end
+```
+- Prefer exceptions over return codes
+  - Try and Catch blocks should be extracted from functions and called in an error handling function, leaving the function to do its one thing.
+  - New exceptions are derivatives of the exception class and do not need recompilation.
+- DRY
