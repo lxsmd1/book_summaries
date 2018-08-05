@@ -86,3 +86,7 @@ def get_customer
   * Wrap in classes to help with context and readability
 
 ## Chapter 3: Functions
+
+_summary_
+
+### Strategies
