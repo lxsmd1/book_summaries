@@ -95,12 +95,12 @@ function and intent
 
 ### Strategies
 
-- Small!
+- Small!:
   - 20 lines is the upper bounds
   - 80-100 char is max
   - if / else / while statements should only have single line or single method calls
     -  keeps them self documenting
-- Do only one thing
+- Do only one thing:
   - [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
   - Requires skill in articulating the abstraction layers and if you are adhering to only 1 of them
   - functions that are properly scoped can not be broken down into smaller sections
@@ -115,5 +115,13 @@ Levels of abstraction:
   .append('\n')
 ```
 
-- Step Down Rule
-  -
+- Step Down Rule:
+  - The function should be read like a set of TO paragraphs
+```
+  To include the setups and teardown, we include setups, then we include the test page content, and then we include the teardown's.
+  - to include the setups we include the suite setup if this is a suite, then we include the regular setup.
+  - To include the suite setup, we search the parent hierarchy for the "SuiteSetUp" page and add an include statement with the path of that page.
+  - To search the parent ...
+```
+
+- Switch Statements:
