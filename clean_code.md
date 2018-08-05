@@ -24,3 +24,6 @@ Goes over in general what the issue with bad code is, and makes the case for wri
 
 ## Chapter 2: Meaningful Names
 
+### Strategies
+
+* Use intention-revealing names
