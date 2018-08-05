@@ -104,6 +104,8 @@ function and intent
   * [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
   * Requires skill in articulating the abstraction layers and if you are adhearing to only 1 of them
   * functions that are properly scoped can not be broken down into smaller sections
+
+  **levels of abstraction**
 ```js
   // high level
   getHtml()
