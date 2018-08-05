@@ -2,21 +2,12 @@
 
 _SUMMARY 1-3 paragraphs_
 
-## Key Terms / Ideas
+## Key Terms
 
 * code-sense: The ability to see bad code and know how to fix it by writing good code.
 * refactoring:
   * objects: breakout into 2 or more objects
   * the extract method: one method that says more clearly what it does, and some sub-methods saying how it does it.
-* intention-revealing names: The name of a variable, function, or class, should answer all the big questions. Why it exists, what it does, and how it is used.
-  ```ruby
-  # BAD
-  # elapsed time in days
-  def d
-  
-  # GOOD
-  def elapsed_time_in_days
-  ```
 
 ## Chapter 1: Clean Code
 
@@ -35,4 +26,48 @@ Goes over in general what the issue with bad code is, and makes the case for wri
 
 ### Strategies
 
-* Use intention-revealing names:
+* Use intention-revealing names: The name of a variable, function, or class, should answer all the big questions. Why it exists, what it does, and how it is used.
+
+```ruby
+# BAD
+def d # elapsed time in days
+
+# GOOD
+def elapsed_time_in_days
+```
+
+* Avoid using misleading names
+
+```rb
+# BAD
+accounts_list = [acct_1, acct_2]
+# not a list but rather an array
+# best not to use any object type in the name
+
+# GOOD
+accounts = [acct_1, acct_2]
+```
+
+* Make meaningful distinctions
+
+```ruby
+# BAD
+def get_active_account
+def get_active_account_info
+def customer_info
+def klass # this should not be used to get around naming collisions
+
+# GOOD
+# Pick a clear naming convention
+def get_active_account
+def get_customer
+```
+
+* Use pronounceable names
+* Use searchable names
+* Avoid encodings
+* Avoid mental mapping (ex. i, j, k for small loops only)
+* Class names: noun or noun phrase names (ex. account or account_parser)
+* Method names: verb or verb phrase names (ex. post_payment or set_name)
+* Pick one word per concept
+* 
