@@ -87,11 +87,7 @@ def get_customer
 
 ## Chapter 3: Functions
 
-_summary_
-
-shorter and clearer
-don't use multiple flags and nested if's when possible
-function and intent
+Functions should be short and single responsibility. Error handling is something so it should be handled in its own function. Functions should tell the story of the program and expose the intent with clear names and limited thoughtful arguments. Levels of abstraction is the key to keeping the functions separate and `srp`
 
 ### Strategies
 
@@ -204,3 +200,9 @@ Levels of abstraction:
   - Try and Catch blocks should be extracted from functions and called in an error handling function, leaving the function to do its one thing.
   - New exceptions are derivatives of the exception class and do not need recompilation.
 - DRY
+
+## Chapter 4: Comments
+
+_summary_
+
+### Strategies
