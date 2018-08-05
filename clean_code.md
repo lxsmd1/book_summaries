@@ -12,9 +12,7 @@ What is bad code
 Cost of bad code
 Tests are required for code to be clean
 
-### Section
-
-Key Rules of Clean Code:
+### Key Rules of Clean Code
 
 * Runs all the tests.
 * Contains no duplicates.
