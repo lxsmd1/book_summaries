@@ -101,5 +101,14 @@ function and intent
   * if / else / while statements should only have single line or single method calls
     *  keeps them self documenting
 * Do only one thing
-  * Requires skill in articulating the abstraction layers and if you are adhearing to only 1 of them
   * [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
+  * Requires skill in articulating the abstraction layers and if you are adhearing to only 1 of them
+  * functions that are properly scoped can not be broken down into smaller sections
+```js
+  // high level
+  getHtml()
+  // intermediate level
+  filePathName = File.open('../some_path', 'a+')
+  // low level
+  .append('\n')
+```
