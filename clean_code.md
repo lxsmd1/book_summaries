@@ -11,9 +11,7 @@ _SUMMARY 1-3 paragraphs_
 
 ## Chapter 1: Clean Code
 
-* What is bad code
-* Cost of bad code
-* Tests are required for code to be clean
+Goes over in general what the issue with bad code is, and makes the case for writing good code as a matter of professionalism. TDD is the professsional way to write good code. Continous refactoring and tidying up any checkedout code, making it better than it was before you started working on it is key to keeping the system full of healthy and clean code. 
 
 ### Key Rules of Clean Code
 
