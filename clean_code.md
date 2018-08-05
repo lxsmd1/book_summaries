@@ -121,6 +121,37 @@ Levels of abstraction:
     - To include the setups we include the suite setup if this is a suite, then we include the regular setup.
     - To include the suite setup, we search the parent hierarchy for the "SuiteSetUp" page and add an include statement with the path of that page.
     - To search the parent ...
-
-
 - Switch Statements:
+  - Use sparingly and bury them in lower level classes
+```ruby
+  class Employee
+    @is_payday = True
+    @calculated_pay = 100
+    @deliver_pay = (pay(@calculate_pay)
+    @type = 'HOURLY'
+
+    def calculate_pay
+    def pay
+        @calculate_pay
+    def is_payday
+    def deliver_pay
+
+  class EmployeeFactory
+    case Employee.type
+    when 'HOURLY'
+      HourlyEmployee.new(employee)
+    when 'COMMISSIONED'
+      CommissionedEmployee.new(employee)
+    when 'SALARIED'
+      SalariedEmployee.new(employee)
+    else
+      raise exception(InvalidEmployeeRecordType(employee.type))
+    end
+  end
+```
+- Use descriptive names
+  - Longer and consistent names like `includeSetup-AndTeardownPages` or `includeSetupPages` help to tell the story when you read the code.
+- Function Arguments
+  - Preferred to be 0 but 1, 2, and 3 accepted.
+  - Over 3 is not great and would need special consideration.
+  - 
