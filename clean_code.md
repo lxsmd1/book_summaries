@@ -4,10 +4,13 @@ _SUMMARY 1-3 paragraphs_
 
 ## Key Terms
 
-* code-sense: The ability to see bad code and know how to fix it by writing good code.
+* code-sense:
+  * The ability to see bad code and know how to fix it by writing good code.
 * refactoring:
   * objects: breakout into 2 or more objects
   * the extract method: one method that says more clearly what it does, and some sub-methods saying how it does it.
+* meaningful naming:
+  * use clear context and distinctions
 
 ## Chapter 1: Clean Code
 
@@ -23,6 +26,8 @@ Goes over in general what the issue with bad code is, and makes the case for wri
 ---
 
 ## Chapter 2: Meaningful Names
+
+Naming can be hard, but will save time in the long run through readability and searching. Using naming conventions is handy if they are done right but needs to be updated along the way when names become more clear. Don't be afraid to rename something as an improvement to the code base.
 
 ### Strategies
 
@@ -76,3 +81,8 @@ def get_customer
   * ex. fetch, retrieve, get are all the same
 * Don't pun
   * ex. add used to increment or concat some values but then used to insert into a collection. Same word, different intent.
+* Add meaningful context
+  * long if blocks can be broken out into methods with clear names
+  * Wrap in classes to help with context and readability
+
+## Chapter 3: Functions
