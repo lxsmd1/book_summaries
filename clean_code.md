@@ -90,7 +90,7 @@ def get_customer
 _summary_
 
 shorter and clearer
-dont use multiple flags and nested if's when possible
+don't use multiple flags and nested if's when possible
 function and intent
 
 ### Strategies
@@ -102,10 +102,10 @@ function and intent
     *  keeps them self documenting
 * Do only one thing
   * [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
-  * Requires skill in articulating the abstraction layers and if you are adhearing to only 1 of them
+  * Requires skill in articulating the abstraction layers and if you are adhering to only 1 of them
   * functions that are properly scoped can not be broken down into smaller sections
 
-  **levels of abstraction**
+Levels of abstraction:
 ```js
   // high level
   getHtml()
