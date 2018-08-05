@@ -154,4 +154,36 @@ Levels of abstraction:
 - Function Arguments
   - Preferred to be 0 but 1, 2, and 3 accepted.
   - Over 3 is not great and would need special consideration.
+  - When passing a variable number of arguments, use an object as the values are likely related and deserve a separate class or at the least their own object.
+```ruby
+  def monad(count)
+  def dyad(name, count)
+  def triad(name, count, args)
+```
+  - Prefer return values over output argument.
+  - When the arguments are events, make that clear.
+  - Flag Arguments
+```ruby
+  render(true)
+```
+  - This declares that there is more than 1 thing happening in this function as there can be a false case that would be acted upon.
+- Verbs and Keywords
+```ruby
+  # GOOD
+  def write(name)
+  # BETTER
+  def write_field(name)
+  # DYAD
+  def assert_expected_equals_actual(expected, actual)
+```
+- Have no side effects
+  - If a function does something then something else that is not in the name of the function, that is a side effect.
+- Output Arguments
+```js
+  // BAD
+  append_footer(d);
+  // GOOD
+  document.append_footer();
+```
+- Command Query Separation
   - 
