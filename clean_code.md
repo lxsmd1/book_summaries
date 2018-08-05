@@ -66,8 +66,13 @@ def get_customer
 * Use pronounceable names
 * Use searchable names
 * Avoid encodings
-* Avoid mental mapping (ex. i, j, k for small loops only)
-* Class names: noun or noun phrase names (ex. account or account_parser)
-* Method names: verb or verb phrase names (ex. post_payment or set_name)
+* Avoid mental mapping
+  * ex. i, j, k for small loops only
+* Class names: noun or noun phrase names
+  * ex. account or account_parser
+* Method names: verb or verb phrase names
+  * ex. post_payment or set_name
 * Pick one word per concept
-* 
+  * ex. fetch, retrieve, get are all the same
+* Don't pun
+  * ex. add used to increment or concat some values but then used to insert into a collection. Same word, different intent.
