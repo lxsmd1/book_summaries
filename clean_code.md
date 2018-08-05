@@ -102,4 +102,4 @@ function and intent
     *  keeps them self documenting
 * Do only one thing
   * Requires skill in articulating the abstraction layers and if you are adhearing to only 1 of them
-  * [https://en.wikipedia.org/wiki/Abstraction_(computer_science)](abstraction)
+  * [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
