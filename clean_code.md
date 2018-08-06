@@ -203,7 +203,7 @@ Levels of abstraction:
 
 ## Chapter 4: Comments
 
-_summary_
+Use sparingly if at all. The function names should describe the actions being taken.
 
 ### Strategies
 
@@ -213,6 +213,14 @@ _summary_
   # check to see if employee is eligible for benefits
   if (employee.flags && HOURLY_FLAG) && (employee.age > 65)
 
-  # GOOD
+  # GOOD => should refactor the above into a descriptive function name
   if employee.isEligibleForBenefits?
 ```
+
+## Chapter 5: Formatting
+
+_summary_
+
+### Strategies
+
+- 
