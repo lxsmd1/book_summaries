@@ -206,3 +206,13 @@ Levels of abstraction:
 _summary_
 
 ### Strategies
+
+- Explain yourself with code
+```ruby
+  # BAD
+  # check to see if employee is eligible for benefits
+  if (employee.flags && HOURLY_FLAG) && (employee.age > 65)
+
+  # GOOD
+  if employee.isEligibleForBenefits?
+```
