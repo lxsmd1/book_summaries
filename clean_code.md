@@ -219,7 +219,7 @@ Use sparingly if at all. The function names should describe the actions being ta
 
 ## Chapter 5: Formatting
 
-_summary_
+Use team / org rules
 
 ### Strategies
 
@@ -241,3 +241,9 @@ _summary_
     @total_chars = 0
   end
 ```
+
+## Chapter 6: Objects and Data Structures
+
+_summary_
+
+### Strategies
