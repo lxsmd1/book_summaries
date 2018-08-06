@@ -223,4 +223,21 @@ _summary_
 
 ### Strategies
 
-- 
+- 100 - 120 max length lines
+- Respect indentations
+- Group function in hierarchy order
+  - caller
+    - callee_1
+    - callee_2
+- white space for variables and declarations
+- Use a code formatter
+- Build a code formatter
+```ruby
+  class CoderAnalyzer
+    @line_count = 0
+    @max_line_width = 0
+    @widest_line_number = 0
+    @line_width_histogram = LineWidthHistogram.new
+    @total_chars = 0
+  end
+```
