@@ -87,7 +87,7 @@ def get_customer
 
 ## Chapter 3: Functions
 
-Functions should be short and single responsibility. Error handling is something so it should be handled in its own function. Functions should tell the story of the program and expose the intent with clear names and limited thoughtful arguments. Levels of abstraction is the key to keeping the functions separate and `srp`
+Functions should be short and single responsibility. Error handling is 'something' so it should be handled in its own function. Functions should tell the story of the program and expose the intent with clear names and limited thoughtful arguments. Understanding levels of abstraction is the key to keeping the functions separate and 'SRP'
 
 ### Strategies
 
@@ -224,6 +224,7 @@ Use team / org rules
 ### Strategies
 
 - 100 - 120 max length lines
+- Max file length varies but 20-60 lines average max
 - Respect indentations
 - Group function in hierarchy order
   - caller
